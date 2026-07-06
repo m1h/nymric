@@ -1,0 +1,49 @@
+[project]
+name = "nymric"
+version = "0.1.0"
+description = "trace a username or email across public sites and correlate the accounts"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "m1h" }]
+keywords = ["osint", "username", "recon", "footprint", "correlation"]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "Topic :: Security",
+]
+dependencies = ["httpx>=0.27", "rich>=13"]
+
+[project.optional-dependencies]
+avatars = ["pillow>=10"]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6", "mypy>=1.11", "respx>=0.21", "pillow>=10", "pre-commit>=3"]
+
+[project.scripts]
+nymric = "nymric.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/m1h/nymric"
+Issues = "https://github.com/m1h/nymric/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nymric"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+addopts = "--cov=nymric --cov-report=term-missing"
