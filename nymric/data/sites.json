@@ -1,0 +1,23 @@
+[
+  {"name": "github",     "url": "https://github.com/{}",                     "method": "status", "links": true},
+  {"name": "gitlab",     "url": "https://gitlab.com/{}",                     "method": "status", "links": false},
+  {"name": "keybase",    "url": "https://keybase.io/{}",                     "method": "status", "links": true},
+  {"name": "devto",      "url": "https://dev.to/{}",                         "method": "status", "links": true},
+  {"name": "youtube",    "url": "https://www.youtube.com/@{}",               "method": "status", "links": false},
+  {"name": "wikipedia",  "url": "https://en.wikipedia.org/wiki/User:{}",     "method": "status", "links": true},
+  {"name": "gravatar",   "url": "https://gravatar.com/{}.json",              "method": "status", "links": true},
+  {"name": "npm",        "url": "https://www.npmjs.com/~{}",                 "method": "status", "links": false},
+  {"name": "lastfm",     "url": "https://www.last.fm/user/{}",               "method": "status", "links": false},
+  {"name": "soundcloud", "url": "https://soundcloud.com/{}",                 "method": "status", "links": false},
+  {"name": "chess",      "url": "https://api.chess.com/pub/player/{}",       "method": "status", "links": true},
+  {"name": "lichess",    "url": "https://lichess.org/api/user/{}",           "method": "status", "links": true},
+  {"name": "codeberg",   "url": "https://codeberg.org/{}",                   "method": "status", "links": true},
+  {"name": "mastodon",   "url": "https://mastodon.social/@{}",               "method": "status", "links": true},
+  {"name": "aboutme",    "url": "https://about.me/{}",                       "method": "status", "links": true},
+  {"name": "buymeacoffee","url": "https://buymeacoffee.com/{}",              "method": "status", "links": true},
+  {"name": "hackernews", "url": "https://news.ycombinator.com/user?id={}",   "method": "text", "found": "karma:", "links": true},
+  {"name": "steam",      "url": "https://steamcommunity.com/id/{}",          "method": "text", "absent": "The specified profile could not be found.", "links": true},
+  {"name": "telegram",   "url": "https://t.me/{}",                           "method": "text", "found": "tgme_page_extra", "links": false},
+  {"name": "twitch",     "url": "https://www.twitch.tv/{}",                  "method": "text", "found": " - Twitch", "links": false},
+  {"name": "pypi",       "url": "https://pypi.org/user/{}/",                 "method": "text", "found": "Profile of {}", "links": true}
+]
