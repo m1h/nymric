@@ -130,7 +130,7 @@ adding a site is a json edit. the rest is a handful of small files: `probe`, `li
 
 - usernames aren't unique. a `possible` hit really might be someone else. that's why it's
   flagged instead of hidden.
-- the list is small on purpose (21 sites). big lists rot. these are ones that behave
+- the list is small on purpose (27 sites). big lists rot. these are ones that behave
   without an anti-bot wall. reddit, instagram, tiktok, x need auth or block you, so they're
   left out instead of faked.
 - markers break when a site redesigns. it's data, so the fix is one line.
