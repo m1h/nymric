@@ -1,0 +1,31 @@
+name: bug report
+description: something isn't working
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: what happened
+      description: the command you ran and what went wrong
+      placeholder: nymric someuser -s github ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: what you expected instead
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: nymric version
+      description: output of `nymric --version`
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: python version
+    validations:
+      required: false

@@ -1,8 +1,10 @@
 # nymric
 
-![ci](https://github.com/m1h/nymric/actions/workflows/ci.yml/badge.svg)
+[![ci](https://github.com/m1h/nymric/actions/workflows/ci.yml/badge.svg)](https://github.com/m1h/nymric/actions/workflows/ci.yml)
+[![pypi](https://img.shields.io/pypi/v/nymric)](https://pypi.org/project/nymric/)
 ![python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
+[![ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 check a username (or an email) across a pile of public sites, follow the links on
 whatever profiles show up, and stitch it all into one picture of a single person with a
