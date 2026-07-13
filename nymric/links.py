@@ -13,7 +13,9 @@ _DOMAINS = {
     "medium.com": "medium", "dev.to": "devto", "lichess.org": "lichess",
     "chess.com": "chess", "facebook.com": "facebook", "mastodon.social": "mastodon",
     "bsky.app": "bluesky", "pinterest.com": "pinterest", "about.me": "aboutme",
-    "buymeacoffee.com": "buymeacoffee",
+    "buymeacoffee.com": "buymeacoffee", "hackerone.com": "hackerone",
+    "bugcrowd.com": "bugcrowd", "hub.docker.com": "dockerhub", "gitea.com": "gitea",
+    "kaggle.com": "kaggle",
 }
 
 _PREFIX = {"@", "in", "u", "user", "users", "people", "profile", "member", "id", "gh"}
